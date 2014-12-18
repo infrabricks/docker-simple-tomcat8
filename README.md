@@ -8,7 +8,7 @@
    * Overlay JRE with JDK
    * Overwrite or extend Tomcat configs, webapps or libs
 
-![](images/docker-tomcat-simple-base.png)
+![](images/infrabricks-tomcat8.png)
 
 It is the sample from my german [blog post](http://www.infrabricks.de)
 
@@ -114,6 +114,8 @@ $ curl -s http://$IP:8080/status/index.jsp
 
 ### Use JDK as overlay
 
+![](images/infrabricks-tomcat8-overlay-jdk.png)
+
 ```bash
 $ docker run --name jdk8 infrabricks/ex-java:jdk-8
 $ docker run -d -p 8002:8080 \
@@ -136,6 +138,8 @@ $ docker exec -ti $CID /bin/sh
 Now debugging is really easy possible, but without building a new tomcat development image!
 
 ### Use the tomcat manager
+
+![](images/infrabricks-tomcat8-composition.png)
 
 **tomcat-users.xml**
 ```xml
