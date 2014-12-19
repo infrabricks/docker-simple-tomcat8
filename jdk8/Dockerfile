@@ -25,7 +25,7 @@ http://download.oracle.com/otn-pub/java/jdk/${JAVA_VERSION_MAJOR}u${JAVA_VERSION
 ENV JAVA_HOME /opt/jdk
 ENV PATH ${PATH}:${JAVA_HOME}/bin
 
-VOLUME [ "/opt/jdk1.8.0_25"]
+VOLUME [ "/opt/jdk"]
 
 ENTRYPOINT ["java"]
 CMD ["-version"]
