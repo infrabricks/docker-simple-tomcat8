@@ -180,6 +180,23 @@ OK - Listed applications for virtual host localhost
 /manager:running:0:manager
 ```
 
+### Install tcnative at debian
+
+```
+ENV DEBIAN_FRONTEND noninteractive
+ENV LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/usr/lib/x86_64-linux-gnu/
+
+RUN apt-get update
+RUN apt-get install -y libtcnative-1
+```
+
+ - [Tomcat tcnative documentation](http://tomcat.apache.org/native-doc/)
+ - install openssl and apr
+ - Build newest version?
+
+
+***
+
 See my [infrabricks blog](http://www.infrabricks.de) to more informations.
 
 Regards
