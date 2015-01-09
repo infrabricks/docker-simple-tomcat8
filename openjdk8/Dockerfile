@@ -8,7 +8,7 @@ ENV JAVAVERSION 8
 # Install Java.
 RUN echo "deb http://ftp.us.debian.org/debian sid main" >> /etc/apt/sources.list \
   && apt-get update -q \
-  && apt-get install -qy curl procps openjdk-${JAVAVERSION}-jdk \
+  && apt-get install -qy curl wget unzip zip procps openjdk-${JAVAVERSION}-jdk \
   && ln -s /usr/lib/jvm/java-${JAVAVERSION}-openjdk-amd64 /opt/jdk \
   && rm -rf /var/lib/{apt,dpkg,cache,log,lists}/
 
