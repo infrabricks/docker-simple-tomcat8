@@ -1,4 +1,6 @@
-# This is a simple tomcat docker image setup
+# This is a tomcat developer docker image setup
+
+![](images/tomcat-logo.png)
 
  * Based on busybox
  * Use a very small footprint
@@ -10,7 +12,7 @@
 
 ![](images/infrabricks-tomcat8.png)
 
-It is the sample from my german [blog post](http://www.infrabricks.de)
+This source is the sample from my german [blog post](http://www.infrabricks.de).
 
 ## Build
 
@@ -197,15 +199,29 @@ RUN apt-get install -y libtcnative-1
 
 ***
 
+
+## User Feedback
+
 See my [infrabricks blog](http://www.infrabricks.de) to more informations.
 
-Regards
-Peter <peter.rossbach@bee42.com>
+Contact me: Peter <peter.rossbach@bee42.com>
 
-Follow me [at Twitter](https://twitter.com/PRossbach)
+Follow me [on Twitter](https://twitter.com/PRossbach)
+
+### Issues
+
+If you have any problems with or questions about this image, please contact us through a GitHub issue.
+
+
+### Contributing
+
+You are invited to contribute new features, fixes, or updates, large or small; we are always thrilled to receive pull requests, and do our best to process them as fast as we can.
+
+Before you start to code, we recommend discussing your plans through a GitHub issue, especially for more ambitious contributions. This gives other contributors a chance to point you in the right direction, give you feedback on your design, and help you find out if someone else is working on the same thing.
 
 ## Links
 
  - [Apache Tomcat](https://tomcat.apache.org)
  - [Docker](https://docker.com)
  - [Infrabricks Blog](http://www.infrabricks.de)
+ - [Tomcat Docker hub library images](https://registry.hub.docker.com/u/library/tomcat/)
